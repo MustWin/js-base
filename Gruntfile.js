@@ -38,7 +38,7 @@ module.exports = function (grunt) {
         tasks: []
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['<%= yeoman.app %>/scripts/**/*.js'],
         tasks: ['clean:angular-builder', 'angular-builder', 'newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
         tasks: ['newer:jshint:test', 'karma']
       },
       styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{less}'],
+        files: ['<%= yeoman.app %>/styles/{,*/}*.less'],
         tasks: ['less', 'newer:copy:styles', 'autoprefixer']
       },
       gruntfile: {
