@@ -187,7 +187,7 @@ module.exports = function (grunt) {
 
     // Empties folders to start fresh
     clean: {
-      'angular-builder': '.tmp/js/app.js',
+      'angular-builder': '.tmp/build/app.js',
       dist: {
         files: [{
           dot: true,
